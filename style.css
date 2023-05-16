@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+border: solid;
+
+    
+}
+.logo{
+    justify-self: center;
+
+}
+
+.links{
+    justify-self: center;
+    align-items: center;
+    
+    
+        }
+
+.links ul li{
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0px 12px;
+    font-weight: 500;
+}
+.links ul li a:hover{
+    background-color: #242424;
+    color: white;
+    box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+    transition: all ease 0.2s;
+  
+}
+.links a{
+    text-decoration: none;
+    
+}
+
+
+p{
+    font-size: 30px;
+    font-style: normal;
+    
+}
+#main{
+    padding-top: 80px;
+     background-color: white;
+}
+#main ul{
+    display: flex;
+    padding: 0;
+}
+.showcase-box{
+    width: 430px;
+    height: 250px;
+    box-shadow: 5px 15px 30px rgba(0,0,0,0.03);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px 20px 10px 20px;
+}
+.showcase-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+   
+}
+.showcase-heading{
+    padding-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color:black;
+}
+.cs-hidden{
+    overflow: visible !important;
+}
+#latest{
+    border-top: 1px solid rgba(53,53,53,0.1);
+}
+#latest ul{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-heading{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.latest-box{
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    background-color: white;
+}
+.latest-b-img{
+    width: 100%;
+    height: 270px;
+}
+.latest-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+.latest-b-text strong{
+    color: #3a3a3a;
+}
+.latest-b-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.latest-b-text p{
+    color: #979797;
+    margin: 0px;
+    font-size: 20px;
+}
+.movies-heading h1{
+    font-weight: 400;
+    margin: 0px;
+    padding: 5px 20px;
+    background-color: rgba(0,0,0,0.01);
+    border: 1px solid rgba(0,0,0,0.06);
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.movies-heading{
+    display: flex;
+    margin: 0px 2%;
+}
+.movies-box{
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+    margin: 20px;
+    border-top:3px solid #292929;
+}
+.movies-img{
+    width: 100%;
+    height:300px;
+    position: relative;
+    
+}
+.movies-img img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+.movies-box a{
+    text-align:center;
+    display:block;
+    font-weight: 600;
+    display:-webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #3a3a3a;
+    margin:20px;
+}
+
+#movies-list{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.quality{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:black;
+    color:white;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.4);
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns a{
+    display: inline-block;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 8px;
+    background-color: #3963f0;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.btns a:hover{
+    background-color: #284fd1;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.01);
+}
+footer p{
+    color: #5e5e5e;
+    margin: 20px ;
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="nav"] {
+      width: 100%;
+    }
+  }
+  
+
+  
+
